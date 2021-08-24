@@ -13,13 +13,13 @@ let myserver = myhttp.createServer(
     console.log( myrequest.url );
 
     let mytext;
-    if ( myrequest.url === "/hey" ) {
-      mytext = "Well hello there...";
+    if ( myrequest.url === "/hola" ) {
+      mytext = "Welcome to the ThunderDome!";
     } else {
-      mytext = "I don't know you!";
+      mytext = "This is not the thunderdome.";
     }
 
-    mytext = mytext + " - Please help me... I am trapped in a Node.js server!";
+    mytext = mytext + " I am new to JavaScript.";
 
     // writeHead() creates an http response header, including the status code (200 OK), the content type
     myresponse.writeHead( 200, { "Content-Type": "text/plain" } );
