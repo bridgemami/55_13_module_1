@@ -17,7 +17,7 @@ let myText;
      myText= "hello";
     }
 
-    // myText = myText + ". I am stuck in node.js."
+    myText = myText + ". I am stuck in node.js."
 
     // writeHead() creates an http response header, including the status code (200 OK), the content type
     myResponse.writeHead(200, {"Content-Type": "text/plain"});
